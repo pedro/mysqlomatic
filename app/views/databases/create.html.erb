@@ -1,0 +1,16 @@
+<p>Connect to it via:</p>
+<input type="text" class="url" size="90" value="<%= @database.url %>" />
+
+<hr>
+
+<p>Or here's your database.yml:</p>
+<textarea>production:
+  adapter: mysql
+  database: <%= @database.name %>
+  password: <%= @database.password %>
+  host: <%= @database.ip %>
+</textarea>
+
+<hr>
+
+<p><%= link_to 'Back', :action => :index %></p>
