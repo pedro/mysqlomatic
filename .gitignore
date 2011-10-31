@@ -2,4 +2,4 @@
 config/database.yml
 log/*
 tmp/*
-
+.env
