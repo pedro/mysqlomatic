@@ -6,8 +6,11 @@ MySQL-o-matic is a multitenant MySQL cloud service similar to Amazon RDS or Fath
 
 # Installation
 
-    $  gem install -v=2.3.5 rails
-    $  gem install mysql
-    $  cp config/database.yml.example config/database.yml
-    $  rake gems:install
-    $  rake db:setup
+    $ gem install -v=2.3.5 rails
+    $ gem install mysql
+    $ gem install foreman
+    $ cp config/database.yml.example config/database.yml
+    $ rake gems:install
+    $ rake db:setup
+    $ cp .env.sample .env
+    $ foreman start -p 3000

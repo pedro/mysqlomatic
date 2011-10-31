@@ -6,7 +6,8 @@ class DatabasesController < ApplicationController
     @database = Database.create
     respond_to do |format|
       format.json do
-        render :json => @database.attributes.merge(:config => { 'DATABASE_URL' => @database.url }).to_json
+        render :json => @database.attributes.merge(:config => { 'DATABASE_URL' => @database.url }).to_json,
+               :status => 201
       end
       format.html do
         flash.now[:notice] = "Database created"
