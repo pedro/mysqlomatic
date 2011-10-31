@@ -1,19 +1,9 @@
 {
-  "name": "mysqlomatic",
-  "plans": [
-    {
-      "price": "0",
-      "name": "Basic",
-      "price_unit": "month"
-    }
-  ],
+  "id": "mysqlomatic",
   "api": {
-    "config_vars": [
-      "DATABASE_URL"
-    ],
-    "username": "heroku",
+    "config_vars": ["DATABASE_URL"],
+    "password": "46c0e8c38cdf72f4",
     "production": "https://yourapp.com/",
-    "test": "http://localhost:3000/",
-    "password": "46c0e8c38cdf72f4"
+    "test": "http://localhost:3000/"
   }
 }

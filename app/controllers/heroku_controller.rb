@@ -4,7 +4,7 @@ class HerokuController < DatabasesController
   protected
     def authenticate_heroku
       authenticate_or_request_with_http_basic do |user, password|
-        user == 'heroku' && password == '46c0e8c38cdf72f4'
+        user == ENV['HEROKU_USERNAME'] && password == ENV['HEROKU_PASSWORD']
       end
     end
 end
